@@ -51,8 +51,8 @@ Endpoints documentation via swagger.
 | Section | Description |
 | ------- | ----------- |
 | **server** | Fastify Service options. See <https://www.fastify.io/docs/latest/Server/#listen> |
-| **fastify** | fastify Options. Ifneed take a look at <https://www.fastify.io/docs/latest/Server/#initialconfig> |
-| **mpd** | location of mpd service. See <https://github.com/cotko/mpd-api#usage> |
+| **fastify** | Fastify options. If needed take a look at <https://www.fastify.io/docs/latest/Server/#initialconfig> |
+| **mpd** | Location of mpd service. host, port, password or path if socket is using. See <https://github.com/cotko/mpd-api#usage> |
 | **cors** | CORS Options. See <https://github.com/fastify/fastify-cors#options> |
 | **store** | store for recent and favorites. |
 
