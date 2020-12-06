@@ -24,8 +24,6 @@ Endpoints documentation via swagger.
 
 ## config.json
 
-defaults
-
 ```json
 {
     "server": {
@@ -43,15 +41,15 @@ defaults
         "origin": true
     },
     "store": {
-        "file" "store.json",
+        "file": "store.json",
         "max_recent": 50,
         "max_favorites": 0
     }
 }
 ```
 
-| section | desciption |
-| --- | --- |
+| Section | Description |
+| ------- | ----------- |
 | **server** | Fastify Service options. See <https://www.fastify.io/docs/latest/Server/#listen> |
 | **fastify** | fastify Options. Ifneed take a look at <https://www.fastify.io/docs/latest/Server/#initialconfig> |
 | **mpd** | location of mpd service. See <https://github.com/cotko/mpd-api#usage> |

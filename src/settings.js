@@ -60,13 +60,13 @@ const settings = {
 }
 
 try {
-    const custom = require('../config.json')
-    if (custom.server) {
-        settings.server = custom.server
+  const sections = ['server', 'fastify', 'mpd', 'cors', 'store']
+  const custom = require('../config.json')
+  sections.forEach(section => {
+    if (custom[section]) {
+      settings[section] = custom[section]
     }
-    if (custom.mpd) {
-        settings.mpd = custom.mpd
-    }
+  })
 }
 catch(e) {
     /* ignore */
