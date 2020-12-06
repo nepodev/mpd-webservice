@@ -3,7 +3,15 @@
   "description": "MPD Webservice",
   "version": "0.1.0",
   "main": "src/index.js",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nepodev/mpd-webservice.git"
+  },
+  "author": "nepodev",
+  "bugs": {
+    "url": "https://github.com/nepodev/mpd-webservice/issues"
+  },
+  "homepage": "https://github.com/nepodev/mpd-webservice#readme",
   "scripts": {
     "dev": "nodemon src/index.js"
   },

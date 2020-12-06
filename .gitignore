@@ -4,3 +4,4 @@ test.*
 store.json
 *.log
 .vscode
+package-lock.json
