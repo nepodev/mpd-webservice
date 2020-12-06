@@ -1,0 +1,22 @@
+{
+  "name": "mpd-webservice",
+  "description": "MPD Webservice",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "data-store": "^4.0.3",
+    "fastify": "^3.8.0",
+    "fastify-cors": "^5.0.0",
+    "fastify-oas": "^3.0.3",
+    "fastify-websocket": "^2.0.11",
+    "mpd-api": "^1.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
