@@ -1,13 +1,13 @@
 # mpd webservice
 
-mpd webradio backend.
+mpd webservice API.
 
 
 ## Install
 
 ```sh
-git clone https://github.com/nepodev/mpd-webradio-api
-cd mpd-webradio-api
+git clone https://github.com/nepodev/mpd-webservice
+cd mpd-webservice
 yarn --prod
 
 ## create config.json if need
