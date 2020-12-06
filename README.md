@@ -20,7 +20,7 @@ node src/
 
 Endpoints documentation via swagger.
 
-<https://{host}:{port}/doc>
+<http://localhost:3000/doc>
 
 ## config.json
 
