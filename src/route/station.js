@@ -45,7 +45,8 @@ module.exports = async (fastify, options) => {
         },
         handler: () => {
             return {
-                language: radionet.language
+                language: radionet.language,
+                languages: radionet.languages
             } 
         }
     })
