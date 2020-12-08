@@ -44,6 +44,9 @@ Endpoints documentation via swagger.
         "file": "store.json",
         "max_recent": 50,
         "max_favorites": 0
+    },
+    "station": {
+        "language": "en"
     }
 }
 ```
@@ -55,4 +58,4 @@ Endpoints documentation via swagger.
 | **mpd** | Location of mpd service. host, port, password or path if socket is using. See <https://github.com/cotko/mpd-api#usage> |
 | **cors** | CORS Options. See <https://github.com/fastify/fastify-cors#options> |
 | **store** | store for recent and favorites. |
-
+| **station** | language for stations. Avaliable: en, de, at, fr, es, pt, it, pl, dk, se |
