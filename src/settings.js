@@ -20,6 +20,9 @@ const settings = {
       max_recent: 50, // 50 items in history
       max_favorites: 0 // disable max
     },
+    station: {
+      language: 'en'
+    },
     swagger: {
         routePrefix: '/doc',
         exposeRoute: true,
@@ -60,7 +63,7 @@ const settings = {
 }
 
 try {
-  const sections = ['server', 'fastify', 'mpd', 'cors', 'store']
+  const sections = ['server', 'fastify', 'mpd', 'cors', 'store', 'station']
   const custom = require('../config.json')
   sections.forEach(section => {
     if (custom[section]) {

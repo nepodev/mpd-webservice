@@ -10,7 +10,7 @@ fastify.register(require('./plugin/store'), settings.store)
 
 // routes
 fastify.register(require('./route/mpd'), settings.mpd)
-fastify.register(require('./route/station'))
+fastify.register(require('./route/station'), settings.station)
 fastify.register(require('./route/store'))
 
   // Run the server!

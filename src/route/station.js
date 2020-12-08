@@ -36,6 +36,19 @@ module.exports = async (fastify, options) => {
         radionet.language = language
     }
     
+    fastify.route({
+        method: 'GET',
+        url: route,
+        schema: {
+            description: 'Get default config.',
+            tags: ['station']
+        },
+        handler: () => {
+            return {
+                language: radionet.language
+            } 
+        }
+    })
     fastify.get(
         route + '/searchby/:category',
         {
