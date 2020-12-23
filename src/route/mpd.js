@@ -145,9 +145,43 @@ module.exports = async (fastify, options) => {
 
     fastify.route({
         method: 'POST',
+        url: route + '/play/:uri',
+        schema: {
+            description: 'replace queue with uri and play. optional data in body will store in list recent.',
+            tags: ['mpd'],
+            params: {
+                type: 'object',
+                properties: {
+                    uri: { type: 'string' }
+                }
+            },
+            body: {
+                description: "optional details will store and can use in frontend.",
+                example: {
+                      name: 'Station Name',
+                      logo: 'https://example.com/statio/logo.png',
+                      description: "an awesom station",
+                    },
+                
+                    type: ['object'],
+                nullable: true
+            }
+        },
+        handler: async (req, rep) => {
+            const { uri } = req.params
+            const data = Object.assign(req.body||{}, { uri })
+            store.add('recent', data)
+            mpc.replaceplay(uri)
+            return data
+        }
+    })
+
+    fastify.route({
+        method: 'POST',
         url: route + '/replaceplay',
         schema: {
-                description: 'replace queue with uri and play. data will store in list recent. only **uri** is required.',
+            hide: true,
+                description: 'deprecated. use play/:uri',
                 tags: ['mpd'],
                 body: {
                     type: 'object',
