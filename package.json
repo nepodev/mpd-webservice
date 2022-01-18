@@ -19,10 +19,10 @@
   "dependencies": {
     "axios": "^0.21.1",
     "data-store": "^4.0.3",
-    "fastify": "^3.8.0",
-    "fastify-cors": "^5.0.0",
-    "fastify-oas": "^3.0.3",
-    "fastify-websocket": "^2.0.11",
+    "fastify": "^3.26.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-oas": "^3.0.8",
+    "fastify-websocket": "^4.0.0",
     "mpd-api": "^1.0.6"
   },
   "devDependencies": {
